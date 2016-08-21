@@ -1,0 +1,453 @@
+/* Theme Colors */
+/* 
+#e27126 - Orange
+#550a1b - Maroon
+#7c7c31 - Mustard  
+*/
+* {
+	box-sizing: border-box;
+	margin: 0; 
+	font-family: "Segoe UI",Arial,sans-serif;
+	color: rgba(0,0,0,.7);
+}
+a {
+	text-decoration: none; 
+	color: inherit;
+}
+a:visited {
+	color: inherit; 
+}
+#headerMenu {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 25px;
+}
+.logoContainer {
+	vertical-align: middle;
+	display: inline-block;
+}
+.logoContainer > img {
+	width:  2em;
+}
+.navMenu {
+	list-style: none;
+	display: inline-block;
+}
+.mobileMenuHolder {
+	display: none;
+}
+.navMenu > li {
+	display: inline-block;
+	margin: 0px 15px;
+	font-size: 1em;
+}
+.navMenuItem {
+	color: #550a1b;
+	opacity: .8;
+}
+.navMenuItem:hover {
+	opacity: 1;
+	cursor: pointer;
+	position: relative;
+}
+.secondaryMenu {
+	display: none;
+	list-style: none;
+	position: absolute;
+	background: rgba(255,255,255,.3);
+	top: 15px;
+	left: 0;
+}
+.secondaryMenu > li {
+	margin-left: -15px;
+    width: 125px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: .8;
+}
+.secondaryMenu > li:hover {
+	opacity: 1;
+	color: #550a1b;
+	cursor: pointer;
+}
+.dropDownMenu:hover > .secondaryMenu{
+	display: block;
+}
+.ctaContact {
+	padding: 5px 15px;
+	background: #550a1b;
+	color: #FFF;
+	border: 1px solid #550a1b;
+	border-radius: 50px;
+	cursor: pointer;
+}
+.headerImg {
+	text-align: center;
+	background: url("../images/headerImg.jpg");
+	background-position: center;
+	background-size: cover;
+	color: white;
+	padding: 25px;
+	height: 100vh;
+}
+.headerTitleMessage {
+	text-transform: uppercase;
+	margin-top: 20%;
+	margin-bottom: 5%;
+}
+.headerSubtitleMessage, .headerTitleMessage { 
+	color: rgba(255,255,255,.9);
+}
+.ctaAppt {
+	color: #550a1b;
+	font-size: 1.5em;
+	background: #FFF;
+	padding: 15px 25px;
+	border-radius: 50px;
+	border: 1px solid #FFF;
+	margin: 5% auto;
+	cursor: pointer;
+}
+.sectionContainer {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 50px 0px;
+}
+.sectionContainer > h2 {
+	margin: 2% auto;
+}
+.sectionContainer:nth-child(even) {
+	background: #f2f2f2;
+}
+.sectionContainer > div {
+	display: inline-block;
+	width: 35%;
+	padding: 2%;
+	vertical-align: middle;
+}
+.sectionDetails {
+	text-align: left;
+}
+.sectionDetails > h3 {
+	color: #e27126;
+}
+.sectionDetails > p {
+	margin: 10px 0px;
+}
+.sectionIconContainer > img {
+	width: 10em;
+}
+.ctaContactUs {
+	color:  #FFF;
+	background: #e27126;
+	border: 1px solid #e27126;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding: 10px 25px;
+	margin: 5% auto;
+	cursor: pointer;
+}
+footer {
+	width: 100%;
+	background: #FFF;
+	text-align: center;
+	padding: 15px 0px;
+	font-size: .75em;
+}
+.nonHomePageFooter {
+	background: #d9d9d9;
+}
+
+/* About Us - Pages */
+.sectionNonHomePageContainer {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 30px 0px;
+}
+.sectionNonHomePageContainer > h3 {
+	margin: 2% auto;
+}
+.bio {
+	line-height: 1.5em;
+}
+.clinicImageContainer {
+	width: 20%;
+	margin:  3%;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: rgb(0, 0, 0);
+	box-shadow: 3px 5.196px 7.2px 1.8px rgba(0, 0, 0, 0.35);
+	overflow:  hidden;
+}
+.clinicImageContainer:hover {
+	cursor: pointer;
+}
+.clinicImage {
+	width: 100%;
+}
+.staffImageContainer {
+  border-radius: 5px;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 3px 5.196px 7.2px 1.8px rgba(0, 0, 0, 0.35);
+  width:  25%;
+  display: inline-block;
+  margin: 2%;
+}
+.staffImg {
+	width: 100%;
+	height: 10em;
+	overflow: hidden;
+}
+.staffImg > img {
+	width: 100%;
+}
+.staffBio {
+	background: #d9d9d9;
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+}
+.enlargeImage {
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	width: 50%;
+	z-index: 2;
+}
+.layover {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.75);
+}
+.exitImage {
+	color: rgba(255,255,255,.8);
+	position: fixed;
+	top: 15%;
+	right: 15%;
+	transform: translateY(-50%);
+	font-size: 35px;
+	cursor: pointer;
+}
+/* Insurance Page  */
+table {
+	margin:  auto;	
+	width: 70%;
+}
+td {
+	padding: 5%;
+}
+
+/* Contact Us Page */
+.contactPageIcon {
+	width: 5em;
+	vertical-align: middle;
+}
+.contactUsInformationContainer {
+	display: inline-block;
+	width: 45%;
+	text-align: left;
+	vertical-align: top;
+}
+.clinicContactInfo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.contactUsInformationContainer > div {
+	margin: 2% auto;
+}
+.contactUsInformationContainer > input {
+	display: block;
+	width: 100%;
+	background: transparent;
+	color: rgba(0,0,0,.8);
+	border: 1px solid #550a1b;
+	border-radius: 2px;
+	margin: 15px auto;
+	height: 3em;
+	padding-left: 5px;
+}
+input:focus, textarea:focus {
+	outline: none;
+	border: 2px solid #550a1b;
+}
+.contactUsInformationContainer > textarea {
+	height: 10em;
+	display: block;
+	width: 100%;
+	border: 1px solid #550a1b;
+	margin: 15px auto;
+	border-radius: 2px;
+}
+.contactUsInformationContainer > button {
+	color: white;
+	margin: 15px auto;
+	background: #550a1b;
+	border: 1px solid #550a1b;
+	padding: 10px 25px;
+	border-radius: 50px;
+}
+
+
+
+/* Services Page */
+.allServicesList {
+	list-style: none;
+	text-align: left;
+}
+.allServicesList > li {
+	margin-left: -15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.allServicesList > li:hover {
+	cursor: pointer;
+}
+.serviceDescription {
+	display: none;
+	line-height: 25px;
+}
+.show {
+	display: block;
+}
+.activeColor {
+	color: #e27126;
+}
+.noShow {
+	display: none;
+}
+.toggle {
+	width: 7em;
+	margin: 1em auto;
+	position: relative;
+}
+.toggle input {
+	opacity: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 6;
+	width: 100%;
+	height: 28px;
+}
+.toggle input ~ .btn {
+	-webkit-transition: all .3s ease;
+}
+.toggle input:checked ~ .btn {
+	left: 50%;
+	-webkit-transition: all .3s ease;
+	height: 32px;
+}
+.toggle .btn {
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+	z-index: 4;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 32px;
+	background: transparent;
+	border: 3px solid #550a1b;
+}
+.toggle .labels {
+	position: absolute;
+	top: .5em;
+	z-index: 2;
+	font-size: .6em;
+	font-weight: bold;
+}
+.toggle .labels:before {
+	content: "English";
+	position: absolute;
+	left: 10px;
+	color: #7c7c31;
+}
+.toggle .labels:after {
+	content: "Espanol";
+	position: absolute;
+	right: 12px;
+	color: #e27126;
+}
+.toggle .bg {
+	display: block;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1.7em;
+	border-radius: 2px;
+	border: 1px solid rgba(0,0,0,.2);
+	background: #fff;
+	box-shadow: 0 1px 0 0 rgba(255,255,255,1);
+}
+
+@media(max-width:768px) {
+	.sectionContainer > div {
+		width: 80%;
+	}
+	.bio {
+		text-align: justify;
+	}
+	.clinicImageContainer {
+		width: 80%;
+		display: block;
+		margin: 2% auto;
+	}
+	.allServicesList {
+		margin-top: 15%;
+	}
+	td {
+		display: block;
+	}
+	.contactUsInformationContainer {
+		display: block;
+		width: 80%;
+		margin: 2% auto;
+	}
+	.mobileMenuHolder {
+		display: block;
+	}
+	.hamburgerMenuIcon {
+		width: 3em;
+	}
+	.mobileMenu {
+		list-style: none;
+		position: absolute;
+		left: 50%;
+		top: 1%;
+		transform: translateX(-50%);
+		background: #FFF;	
+	}
+	.mobileMenu > li {
+		margin: 15% auto;
+		margin-left: -15px;
+		width: 200px;
+	}
+	.mobileMenu > li > ul {
+		list-style: none;
+	}
+	.mobileMenu > li > ul > li{
+		margin-top: 2%;
+		margin-left: -15px;
+	}
+	.navMenu {
+		display: none;
+	}
+}
+
+
+
+

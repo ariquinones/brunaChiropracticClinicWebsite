@@ -138,6 +138,9 @@ a:visited {
 .sectionDetails > p {
 	margin: 10px 0px;
 }
+.homepageLinks {
+	line-height: 2em;
+}
 .sectionIconContainer > img {
 	width: 10em;
 }
@@ -375,7 +378,7 @@ input:focus, textarea:focus {
 	color: #7c7c31;
 }
 .toggle .labels:after {
-	content: "Espanol";
+	content: "Espa\00f1ol";
 	position: absolute;
 	right: 12px;
 	color: #e27126;
@@ -402,9 +405,9 @@ input:focus, textarea:focus {
 		text-align: justify;
 	}
 	.clinicImageContainer {
-		width: 80%;
+		width: 60%;
 		display: block;
-		margin: 2% auto;
+		margin: 5% auto;
 	}
 	.allServicesList {
 		margin-top: 15%;

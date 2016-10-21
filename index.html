@@ -4,12 +4,15 @@
 	<title>Dr. Bruna Chiropractic Services</title>
 	<meta name="description" content="Chiropractic services in Houston, Texas">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="shortcut icon" type="image/png" href="images/drBrunaLogo2016.png"/>
 </head>
 <body>
 
 	<div id="headerMenu">
 		<div class="logoContainer">
-			<img src="images/drBrunaLogo2016.png">
+			<a href="index.html">
+				<img src="images/drBrunaLogo2016.png">
+			</a>
 		</div>
 		<ul class="navMenu">
 			<li class="navMenuItem"><a href="index.html">Home</a></li>
@@ -35,7 +38,8 @@
 		<div class="mobileMenuHolder">
 			<img class="hamburgerMenuIcon" src="images/hamburgerMenu.svg">
 		</div>
-		<ul class="mobileMenu noShow">
+		<ul class="mobileMenu noShow transformMobile">
+			<div class="exitMobileMenu">X</div>
 			<li class="navMenuItem"><a href="index.html">Home</a></li>
 			<li class="navMenuItem">About Us
 					<ul>
@@ -57,7 +61,7 @@
 			<li class="navMenuItem"><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
-	<div class="headerImg">
+	<div id="homeHeader" class="headerImg">
 		<h1 class="headerTitleMessage">Need Medical Help? We can help.</h1>
 		<h2 class="headerSubtitleMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h2>
 		<button class="ctaAppt"><a href="contact.html">Make an appointment</a></button>
@@ -67,7 +71,7 @@
 		<h1> Need a chiropractic adjustment?</h1>
 		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
 		<div class="sectionDetails">
-			<h3>View all services we offer</h3>
+			<h3>View all services we offer <small style="font-size:65%;">(Servicio en Espa&ntilde;ol)</small></h3>
 			<a class="homepageLinks" href="services.html">
 			<p>Muscle Stimulation</p>
 			<p>X-rays</p>

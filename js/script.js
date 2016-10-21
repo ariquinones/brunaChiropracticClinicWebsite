@@ -41,6 +41,9 @@ $('.clinicImageContainer').on('click', function() {
 $('.mobileMenuHolder').on('click', function() {
 	if ($('.mobileMenu').hasClass('noShow')) {
 		$('.mobileMenu').removeClass('noShow')
+		setTimeout(function(){ 
+			$('.mobileMenu').removeClass('transformMobile')
+		}, 500);	
 		$('.dropDownMenuAbout').on('click', function() {
 			$('.secondaryMenuAbout').css('display', 'block')
 		})
@@ -51,7 +54,15 @@ $('.mobileMenuHolder').on('click', function() {
 	else {
 		$('.mobileMenu').addClass('noShow')	
 	}	
-})
+});
+
+$('.exitMobileMenu').on('click', function() {
+	$('.mobileMenu').addClass('transformMobile')	
+	setTimeout(function(){ 
+		$('.mobileMenu').addClass('noShow');
+	}, 1000);
+	
+});
 
 var mq = window.matchMedia("(min-width: 768px)");
     mq.addListener(WidthChange);

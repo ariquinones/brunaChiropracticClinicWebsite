@@ -3,14 +3,16 @@
 <head>
 	<title>Dr. Bruna Chiropractic Services</title>
 	<meta name="description" content="Chiropractic services in Houston, Texas">
-
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="shortcut icon" type="image/png" href="images/drBrunaLogo2016.png"/>
 </head>
 <body>
 
 	<div id="headerMenu">
 		<div class="logoContainer">
-			<img src="images/drBrunaLogo2016.png">
+			<a href="index.html">
+				<img src="images/drBrunaLogo2016.png">
+			</a>
 		</div>
 		<ul class="navMenu">
 			<li class="navMenuItem"><a href="index.html">Home</a></li>
@@ -36,7 +38,8 @@
 		<div class="mobileMenuHolder">
 			<img class="hamburgerMenuIcon" src="images/hamburgerMenu.svg">
 		</div>
-		<ul class="mobileMenu noShow">
+		<ul class="mobileMenu noShow transformMobile">
+			<div class="exitMobileMenu">X</div>
 			<li class="navMenuItem"><a href="index.html">Home</a></li>
 			<li class="navMenuItem">About Us
 					<ul>
@@ -58,10 +61,8 @@
 			<li class="navMenuItem"><a href="contact.html">Contact</a></li>
 		</ul>
 	</div>
-	<div class="headerImg">
-		<h1 class="headerTitleMessage">Need Medical Help? We can help.</h1>
-		<h2 class="headerSubtitleMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h2>
-		<button class="ctaAppt"><a href="contact.html">Make an appointment</a></button>
+	<div id="contactHeader" class="headerImg">
+		<h1 class="headerTitleMessage">GET IN TOUCH</h1>
 	</div>
 	<div class="sectionNonHomePageContainer">
 		<h1>CONTACT US</h1>
@@ -98,17 +99,17 @@
 			</div>
 			<div>
 				<!-- v=3.exp -->
-				<script src='https://maps.googleapis.com/maps/api/js?libraries=place&key=AIzaSyD9W1YTKy2ERAVWWSslHi6PSjg-o1U3050'></script><div style='overflow:hidden;height:300px;width:400px;border:1px solid #550a1b;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(29.84225721531062,-95.4059138359375),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.84225721531062,-95.4059138359375)});infowindow = new google.maps.InfoWindow({content:'<strong>Bruna Chiropractic Clinic</strong><br>5011 N. Sheperd Dr.<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				<script src='https://maps.googleapis.com/maps/api/js?libraries=place&key=AIzaSyD9W1YTKy2ERAVWWSslHi6PSjg-o1U3050'></script><div class="clinicMap" style='overflow:hidden;border:1px solid #550a1b;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(29.84225721531062,-95.4059138359375),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.84225721531062,-95.4059138359375)});infowindow = new google.maps.InfoWindow({content:'<strong>Bruna Chiropractic Clinic</strong><br>5011 N. Sheperd Dr.<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 			</div>
 		</div>
-		<div class="contactUsInformationContainer">
+		<!-- <div class="contactUsInformationContainer">
 			<h4>Send us a message</h4>
 			<input type="text" placeholder="Name">
 			<input type="text" placeholder="Email">
 			<textarea placeholder="Your message here..."></textarea>
 			<button>SEND</button>
 
-		</div>
+		</div> -->
 	</div>
 
 	<footer class="nonHomePageFooter"> 

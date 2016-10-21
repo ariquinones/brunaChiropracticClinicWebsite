@@ -4,12 +4,15 @@
 	<title>Dr. Bruna Chiropractic Services</title>
 	<meta name="description" content="Chiropractic services in Houston, Texas">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="shortcut icon" type="image/png" href="images/drBrunaLogo2016.png"/>
 </head>
 <body>
 
 	<div id="headerMenu">
 			<div class="logoContainer">
-				<img src="images/drBrunaLogo2016.png">
+				<a href="index.html">
+					<img src="images/drBrunaLogo2016.png">
+				</a>
 			</div>
 			<ul class="navMenu">
 				<li class="navMenuItem"><a href="index.html">Home</a></li>
@@ -35,29 +38,30 @@
 			<div class="mobileMenuHolder">
 				<img class="hamburgerMenuIcon" src="images/hamburgerMenu.svg">
 			</div>
-			<ul class="mobileMenu noShow">
-				<li class="navMenuItem"><a href="index.html">Home</a></li>
-				<li class="navMenuItem">About Us
-						<ul>
-							<li><a href="aboutUsDrBruna.html">Dr. Bruna</a></li>
-							<li><a href="aboutUsClinic.html">Our Clinic</a></li>
-						</ul>
-				</li>
-				<li class="navMenuItem">Services
-						<ul>
-							<li><a href="services.html">Chiropractic Manipulation</a></li>
-							<li><a href="services.html">Therapeutic Ultrasound</a></li>
-							<li><a href="services.html">Electric Muscle Stimulation</a></li>
-							<li><a href="services.html">Therapeutic Massage</a></li>
-							<li><a href="services.html">Spinal Traction</a></li>
-							<li><a href="services.html">Rehabilitative Therapy</a></li>
-						</ul>
-				</li>
-				<li class="navMenuItem"><a href="insurance.html">Insurance</a></li>
-				<li class="navMenuItem"><a href="contact.html">Contact</a></li>
-			</ul>
+			<ul class="mobileMenu noShow transformMobile">
+			<div class="exitMobileMenu">X</div>
+			<li class="navMenuItem"><a href="index.html">Home</a></li>
+			<li class="navMenuItem">About Us
+					<ul>
+						<li><a href="aboutUsDrBruna.html">Dr. Bruna</a></li>
+						<li><a href="aboutUsClinic.html">Our Clinic</a></li>
+					</ul>
+			</li>
+			<li class="navMenuItem">Services
+					<ul>
+						<li><a href="services.html">Chiropractic Manipulation</a></li>
+						<li><a href="services.html">Therapeutic Ultrasound</a></li>
+						<li><a href="services.html">Electric Muscle Stimulation</a></li>
+						<li><a href="services.html">Therapeutic Massage</a></li>
+						<li><a href="services.html">Spinal Traction</a></li>
+						<li><a href="services.html">Rehabilitative Therapy</a></li>
+					</ul>
+			</li>
+			<li class="navMenuItem"><a href="insurance.html">Insurance</a></li>
+			<li class="navMenuItem"><a href="contact.html">Contact</a></li>
+		</ul>
 		</div>
-		<div class="headerImg">
+		<div id="aboutClinicHeader" class="headerImg">
 			<h1 class="headerTitleMessage">Need Medical Help? We can help.</h1>
 			<h2 class="headerSubtitleMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h2>
 			<button class="ctaAppt"><a href="contact.html">Make an appointment</a></button>
@@ -66,23 +70,25 @@
 		<h1>ABOUT US</h1>
 		<h3>Our Clinic</h3>
 		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
+			<img class="clinicImage" src="images/brunaHomeHeader.jpg">
 		</div>
 		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
+			<img class="clinicImage" src="images/brunaAboutClinicHeader.jpg">
 		</div>
 		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
+			<img class="clinicImage" src="images/brunaAboutDrHeader.jpg">
 		</div>
 		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
+			<img class="clinicImage" src="images/brunaContactHeader.jpg">
 		</div>
 		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
+			<img class="clinicImage" src="images/brunaServicesHeader.jpg">
 		</div>
-		<div class="clinicImageContainer">
-			<img class="clinicImage" src="images/clinicPlaceholder.JPG">
-		</div>
+	</div>
+	<!-- width="600" height="450" -->
+	<div id="virtualTourContainer" >
+		<h1 style="margin: 10px auto;">Take our virtual tour</h1>
+		<iframe id="virtualTour" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1476926823115!6m8!1m7!1sjMiTlOfqZN0AAAQvvdQRHg!2m2!1d29.83960432509619!2d-95.4111728401873!3f244!4f0!5f0.7820865974627469" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="layover noShow"></div>
 	<div class="exitImage noShow">X</div>

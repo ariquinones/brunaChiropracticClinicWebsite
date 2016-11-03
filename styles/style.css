@@ -115,7 +115,7 @@ a:visited {
 	background-size: cover;
 }
 #contactHeader {
-	background: url("../images/brunaContactHeader.jpg");
+	background: url("../images/brunaServicesHeader.jpg");
 	background-position: center;
 	background-size: cover;
 }
@@ -205,11 +205,15 @@ footer {
 .sectionNonHomePageContainer > h3 {
 	margin: 2% auto;
 }
+.bioContainer {
+	margin-top: 2%;
+    width: 60%;
+}
 .bio {
 	line-height: 1.5em;
 }
 .clinicImageContainer {
-	width: 25%;
+	width: 35%;
 	margin:  3%;
 	display: inline-block;
 	border-radius: 5px;
@@ -441,14 +445,27 @@ input:focus, textarea:focus {
 }
 
 @media(max-width:768px) {
+	.ctaAppt {
+		margin-top: 30%;
+	} 
 	.sectionContainer > div {
 		width: 80%;
+	}
+	.contactUsInformationContainer > div {
+	    width: 100%;
+	    text-align: center;
+	}
+	.clinicContactInfo {
+		display: block;
+	}
+	.bioContainer {
+		width: 90%;
 	}
 	.bio {
 		text-align: justify;
 	}
 	.clinicImageContainer {
-		width: 60%;
+		width: 80%;
 		display: block;
 		margin: 5% auto;
 	}
@@ -462,6 +479,9 @@ input:focus, textarea:focus {
 		display: block;
 		width: 80%;
 		margin: 2% auto;
+	}
+	#contactHeader > .headerTitleMessage {
+		margin-top: 50%;
 	}
 	.clinicMap {
 		height:300px;
